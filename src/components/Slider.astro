@@ -1,0 +1,112 @@
+<section class="mb-20">
+  <!-- Slider main container -->
+  <div class="swiper relative">
+    <div class="swiper-wrapper py-10 [&>*]:w-8/12">
+      <div class="swiper-slide">
+        <iframe
+          class="w-full aspect-video"
+          src="https://www.youtube.com/embed/H7C4Xn1cT-o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="swiper-slide">
+        <img src="sitemaps/image_01.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="sitemaps/image_02.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="sitemaps/image_03.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="sitemaps/image_04.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="sitemaps/image_05.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="sitemaps/image_06.png" alt="" />
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div
+      class="swiper-button-prev bg-slate-800/70 hover:bg-slate-800/80 transition backdrop-blur-xl text-white rounded-full aspect-square p-10 lg:ml-16"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="w-10 h-10 shrink-0"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+      </svg>
+    </div>
+    <div
+      class="swiper-button-next bg-slate-800/70 hover:bg-slate-800/80 transition backdrop-blur-xl text-white rounded-full aspect-square p-10 lg:mr-16"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="w-10 h-10 shrink-0"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+  }
+</style>
+
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+></script>
+<script is:inline>
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: 80,
+    watchSlidesProgress: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+  });
+</script>
