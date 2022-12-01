@@ -1,17 +1,582 @@
 ---
-import Testimonial from "../components/Testimonial.astro";
 import Button from "./Button.astro";
 ---
 
-<section class="max-w-6xl mx-auto px-5 mb-20">
-  <h2 class="font-bold text-center mb-8 text-5xl">What our users say</h2>
-  <div class="grid sm:grid-cols-2 mb-16 xl:grid-cols-2 gap-8 gap-y-4">
-    <Testimonial />
-    <Testimonial />
-    <Testimonial />
-    <Testimonial />
-  </div>
-  <div class="text-center">
+<section class="max-w-6xl mx-auto px-5">
+  <h2 class="font-bold text-center mb-8 font-custom text-5xl">
+    What our users say
+  </h2>
+
+  <!-- start -->
+  <section aria-labelledby="reviews-heading">
+    <div class="mb-20">
+      <!-- <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 p-1"> -->
+      <div class="grid grid-cols-3 gap-x-6 gap-y-2 place-items-start">
+        <h3 class="sr-only">Recent reviews</h3>
+        <a
+          href="https://apps.shopify.com/sitemap-noindex-seo-tools?ref=cross-promoter&review_id=981923"
+          class="focus:outline-none inline-block"
+          target="_blank"
+        >
+          <div
+            class="flow-root my-2 px-6 py-6 rounded-lg border bg-white shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400"
+            style="background-color: #ffffff; border-color: #dbdbdb;"
+          >
+            <div class="divide-y divide-gray-200">
+              <div class="">
+                <div class="flex items-center">
+                  <img
+                    src="https://cdn.shopify.com/app-store/listing_images/f8de556eb1ffcec474cc7a34a71f1158/icon/CNb_orG12PcCEAE=.png?height=72&width=72"
+                    alt="XML HTML Sitemap / NoIndex SEO"
+                    class="h-12 w-12 rounded-full"
+                  />
+                  <div class="ml-4">
+                    <div class="flex justify-between">
+                      <span>
+                        <h4 class="text-sm font-medium text-gray-900">
+                          XML HTML Sitemap / NoIndex SEO
+                        </h4>
+                        <p>
+                          <time
+                            class="text-sm font-medium text-gray-500"
+                            datetime="2022-11-18">Friday, 18 Nov 2022</time
+                          >
+                        </p>
+                      </span>
+                    </div>
+                    <div class="flex mt-1 items-center">
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <p class="sr-only">out of 5 stars</p>
+                  </div>
+                </div>
+
+                <div class="mt-4 space-y-6 text-base italic text-gray-600">
+                  <p>
+                    Due to the size of our inventory &amp; Shopify limitations
+                    we experienced some issues however Anthony was able to help
+                    fix them and cater to our requirements. Would definitely
+                    recommend this app and company!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          style="overflow-x: auto; vertical-align: top;"
+          href="https://apps.shopify.com/sitemap-noindex-seo-tools?ref=cross-promoter&review_id=982147"
+          class="focus:outline-none flex"
+          target="_blank"
+        >
+          <div
+            class="flow-root my-2 px-6 py-6 rounded-lg border bg-white shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400"
+            style="background-color: #ffffff; border-color: #dbdbdb;"
+          >
+            <div class="divide-y divide-gray-200">
+              <div class="">
+                <div class="flex items-center">
+                  <img
+                    src="https://cdn.shopify.com/app-store/listing_images/f8de556eb1ffcec474cc7a34a71f1158/icon/CNb_orG12PcCEAE=.png?height=72&width=72"
+                    alt="XML HTML Sitemap / NoIndex SEO"
+                    class="h-12 w-12 rounded-full"
+                  />
+                  <div class="ml-4">
+                    <div class="flex justify-between">
+                      <span>
+                        <h4 class="text-sm font-medium text-gray-900">
+                          XML HTML Sitemap / NoIndex SEO
+                        </h4>
+                        <p>
+                          <time
+                            class="text-sm font-medium text-gray-500"
+                            datetime="2022-11-18">Friday, 18 Nov 2022</time
+                          >
+                        </p>
+                      </span>
+                    </div>
+                    <div class="flex mt-1 items-center">
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <p class="sr-only">out of 5 stars</p>
+                  </div>
+                </div>
+
+                <div class="mt-4 space-y-6 text-base italic text-gray-600">
+                  <p>
+                    The app is very simple to set up and enable. There are clear
+                    step-by-step instructions along with videos and articles to
+                    help. The price per month is a good value. Support, when
+                    necessary, is quick, efficient, and happy to help. Thank
+                    you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          style="overflow-x: auto; vertical-align: top;"
+          href="https://apps.shopify.com/sitemap-noindex-seo-tools?ref=cross-promoter&review_id=980924"
+          class="focus:outline-none flex"
+          target="_blank"
+        >
+          <div
+            class="flow-root my-2 px-6 py-6 rounded-lg border bg-white shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400"
+            style="background-color: #ffffff; border-color: #dbdbdb;"
+          >
+            <div class="divide-y divide-gray-200">
+              <div class="">
+                <div class="flex items-center">
+                  <img
+                    src="https://cdn.shopify.com/app-store/listing_images/f8de556eb1ffcec474cc7a34a71f1158/icon/CNb_orG12PcCEAE=.png?height=72&width=72"
+                    alt="XML HTML Sitemap / NoIndex SEO"
+                    class="h-12 w-12 rounded-full"
+                  />
+                  <div class="ml-4">
+                    <div class="flex justify-between">
+                      <span>
+                        <h4 class="text-sm font-medium text-gray-900">
+                          XML HTML Sitemap / NoIndex SEO
+                        </h4>
+                        <p>
+                          <time
+                            class="text-sm font-medium text-gray-500"
+                            datetime="2022-11-17">Thursday, 17 Nov 2022</time
+                          >
+                        </p>
+                      </span>
+                    </div>
+                    <div class="flex mt-1 items-center">
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <p class="sr-only">out of 5 stars</p>
+                  </div>
+                </div>
+
+                <div class="mt-4 space-y-6 text-base italic text-gray-600">
+                  <p>
+                    Fijne app. Makkelijk in gebruik, werkt goed, opent snel niet
+                    duur. Maakt no index-no follow lekker overzichtelijk
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          style="overflow-x: auto; vertical-align: top;"
+          href="https://apps.shopify.com/sitemap-noindex-seo-tools?ref=cross-promoter&review_id=976616"
+          class="focus:outline-none flex"
+          target="_blank"
+        >
+          <div
+            class="flow-root my-2 px-6 py-6 rounded-lg border bg-white shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400"
+            style="background-color: #ffffff; border-color: #dbdbdb;"
+          >
+            <div class="divide-y divide-gray-200">
+              <div class="">
+                <div class="flex items-center">
+                  <img
+                    src="https://cdn.shopify.com/app-store/listing_images/f8de556eb1ffcec474cc7a34a71f1158/icon/CNb_orG12PcCEAE=.png?height=72&width=72"
+                    alt="XML HTML Sitemap / NoIndex SEO"
+                    class="h-12 w-12 rounded-full"
+                  />
+                  <div class="ml-4">
+                    <div class="flex justify-between">
+                      <span>
+                        <h4 class="text-sm font-medium text-gray-900">
+                          XML HTML Sitemap / NoIndex SEO
+                        </h4>
+                        <p>
+                          <time
+                            class="text-sm font-medium text-gray-500"
+                            datetime="2022-11-10">Thursday, 10 Nov 2022</time
+                          >
+                        </p>
+                      </span>
+                    </div>
+                    <div class="flex mt-1 items-center">
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <p class="sr-only">out of 5 stars</p>
+                  </div>
+                </div>
+
+                <div class="mt-4 space-y-6 text-base italic text-gray-600">
+                  <p>
+                    We use this app to update all page functionality. Very
+                    simple to understand and will have support if it's needed.
+                    Recommended giving it a try out if you want to update your
+                    store for good without compromising your budget. Thank you!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          style="overflow-x: auto; vertical-align: top;"
+          href="https://apps.shopify.com/sitemap-noindex-seo-tools?ref=cross-promoter&review_id=976193"
+          class="focus:outline-none inline-block"
+          target="_blank"
+        >
+          <div
+            class="flow-root my-2 px-6 py-6 rounded-lg border bg-white shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400"
+            style="background-color: #ffffff; border-color: #dbdbdb;"
+          >
+            <div class="divide-y divide-gray-200">
+              <div class="">
+                <div class="flex items-center">
+                  <img
+                    src="https://cdn.shopify.com/app-store/listing_images/f8de556eb1ffcec474cc7a34a71f1158/icon/CNb_orG12PcCEAE=.png?height=72&width=72"
+                    alt="XML HTML Sitemap / NoIndex SEO"
+                    class="h-12 w-12 rounded-full"
+                  />
+                  <div class="ml-4">
+                    <div class="flex justify-between">
+                      <span>
+                        <h4 class="text-sm font-medium text-gray-900">
+                          XML HTML Sitemap / NoIndex SEO
+                        </h4>
+                        <p>
+                          <time
+                            class="text-sm font-medium text-gray-500"
+                            datetime="2022-11-09">Wednesday, 09 Nov 2022</time
+                          >
+                        </p>
+                      </span>
+                    </div>
+                    <div class="flex mt-1 items-center">
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <svg
+                        class="text-yellow-400 h-3 w-3 md:h-5 md:w-5 flex-shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <p class="sr-only">out of 5 stars</p>
+                  </div>
+                </div>
+
+                <div class="mt-4 space-y-6 text-base italic text-gray-600">
+                  <p>
+                    Got this app a couple months ago and it was fairly intuitive
+                    to configure and get the necessary sitemaps published as I
+                    recall. Good instructions and videos on how to configure.
+                    Then of course other things become priority and I never
+                    really got back to finalizing settings and dialing the app
+                    in. So it was really nice that Anthony reached out to me out
+                    of the blue to offer support on tweaking some things to
+                    better optimize the app to help my site. Now that is some
+                    impressive support, to be offered support when you didn't
+                    even ask for it. It's good to know that I am all set in this
+                    particular area of site management. Thank you for your
+                    review. We strive to provide customer support as it's our
+                    most important aspect of the app, to make sure you get the
+                    support you need and we're always here to provide it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end -->
+  <div class="text-center mb-20">
     <Button />
   </div>
 </section>
