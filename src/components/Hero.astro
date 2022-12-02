@@ -3,75 +3,43 @@ import Button from "./Button.astro";
 ---
 
 <section
-  class="py-10 sm:py-20 px-5 bg-gradient-to-b from-cyan-200/70 via-cyan-100 text-center"
+  class="py-10 bg-gradient-to-b relative from-cyan-700 via-cyan-600 to-cyan-400 text-white sm:pt-32 sm:pb-24 mb-24 px-5"
 >
-  <div class="mb-4 flex gap-1 justify-center">
+  <div class="relative">
     <svg
+      class="w-2/3 opacity-[0.08] -top-12 -right-64 absolute"
+      viewBox="0 0 262 297"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      class="h-6 w-6 fill-yellow-400"
-      fill="currentColor"
-      aria-hidden="true"
     >
       <path
         fill-rule="evenodd"
-        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-        clip-rule="evenodd"></path>
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      class="h-6 w-6 fill-yellow-400"
-      fill="currentColor"
-      aria-hidden="true"
-    >
+        clip-rule="evenodd"
+        d="M185.95 294.385L185.276 35.4092C183.53 33.6649 180.123 34.1916 178.792 34.5802L169.923 37.3263C168.828 33.7276 167.407 30.2359 165.678 26.8947C159.385 14.8915 150.187 8.54451 139.053 8.52724H139.018C138.275 8.52724 137.54 8.59632 136.796 8.65677L136.71 8.6654C136.388 8.26923 136.053 7.88333 135.707 7.50826C130.866 2.32702 124.642 -0.20315 117.19 0.0127348C102.823 0.427234 88.5158 10.807 76.906 29.2436C68.7368 42.2226 62.5385 58.5176 60.7664 71.1339L32.4723 79.8988C24.1475 82.5153 23.8881 82.7744 22.7903 90.624C21.969 96.5651 0.175781 265.119 0.175781 265.119L182.821 296.708L185.95 294.376V294.385ZM126.112 11.8519C123.682 10.2543 120.838 9.51167 117.467 9.58076C95.2846 10.2198 75.9378 44.8736 71.0017 67.9647L92.2503 61.3845L96.0453 60.2101C98.8289 45.5472 105.814 30.3316 114.951 20.5391C118.146 17.0301 121.918 14.0921 126.103 11.8519H126.112ZM106.549 56.9545L137.047 47.5074C137.142 39.5629 136.278 27.8187 132.301 19.5287C128.065 21.2731 124.504 24.33 121.945 27.0674C115.09 34.4334 109.496 45.6681 106.557 56.9545H106.549ZM146.599 44.5541L160.777 40.1587C158.512 32.8013 153.135 20.47 142.234 18.3975C145.623 27.1452 146.496 37.2745 146.599 44.5541Z"
+        fill="currentColor"></path>
       <path
-        fill-rule="evenodd"
-        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-        clip-rule="evenodd"></path>
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      class="h-6 w-6 fill-yellow-400"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-        clip-rule="evenodd"></path>
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      class="h-6 w-6 fill-yellow-400"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-        clip-rule="evenodd"></path>
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      class="h-6 w-6 fill-yellow-400"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-        clip-rule="evenodd"></path>
+        d="M226.874 54.6748C225.784 54.5885 204.674 54.2603 204.674 54.2603C204.674 54.2603 187.013 37.1105 185.267 35.3575C184.591 34.7342 183.734 34.3411 182.82 34.2349V296.665L261.962 276.985C261.962 276.985 229.666 58.5867 229.458 57.0928C229.358 56.4583 229.049 55.8755 228.579 55.4373C228.109 54.9991 227.505 54.7307 226.865 54.6748H226.874Z"
+        fill="currentColor"></path>
     </svg>
   </div>
-  <h1 class="text-3xl sm:text-6xl font-custom mb-4 max-w-2xl mx-auto font-bold">
-    XML HTML Sitemap / NoIndex SEO
-  </h1>
-  <p class="mb-10 text-slate-500 text-2xl max-w-md mx-auto">
-    HTML Sitemap Builder, XML Sitemap, NoIndex, NoFollow meta tags
-  </p>
-  <Button />
+  <div class="max-w-4xl mx-auto mb-24">
+    <h1 class="text-3xl sm:text-7xl mb-4 font-black">
+      XML HTML Sitemap / NoIndex SEO
+    </h1>
+    <p class="mb-10 opacity-70 max-w-xl text-3xl">
+      HTML Sitemap Builder, XML Sitemap, NoIndex, NoFollow meta tags
+    </p>
+
+    <Button />
+  </div>
+  <div
+    class="relative flex w-2/3 shadow-2xl shadow-cyan-900 rounded-xl overflow-clip mx-auto"
+  >
+    <iframe
+      class="w-full shrink-0 aspect-video"
+      src="https://www.youtube.com/embed/H7C4Xn1cT-o"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 </section>
