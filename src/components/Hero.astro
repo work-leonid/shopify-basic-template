@@ -1,9 +1,10 @@
 ---
 import Button from "./Button.astro";
+import Rating from "./atoms/Rating.astro";
 ---
 
 <section
-  class="py-10 bg-gradient-to-b relative overflow-hidden from-cyan-700 via-cyan-600 to-cyan-400 text-white sm:pt-32 sm:pb-24 mb-24 px-5"
+  class="py-10 bg-gradient-to-b relative overflow-hidden from-cyan-600 via-cyan-600 to-cyan-400 text-white sm:pt-32 sm:pb-24 mb-24 px-5"
 >
   <div class="relative">
     <svg
@@ -30,7 +31,15 @@ import Button from "./Button.astro";
       HTML Sitemap Builder, XML Sitemap, NoIndex, NoFollow meta tags
     </p>
 
-    <Button />
+    <div class="flex gap-8 items-center">
+      <Button />
+      <div class="flex flex-col gap-1">
+        <Rating />
+        <div class="text-center font-medium">
+          <span class="font-black">2048</span> reviews
+        </div>
+      </div>
+    </div>
   </div>
   <div
     class="relative flex w-2/3 shadow-2xl shadow-cyan-900 rounded-xl overflow-clip mx-auto"
