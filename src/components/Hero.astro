@@ -4,11 +4,11 @@ import Rating from "./atoms/Rating.astro";
 ---
 
 <section
-  class="py-10 bg-gradient-to-b relative overflow-hidden from-cyan-600 via-cyan-600 to-cyan-400 text-white sm:pt-32 sm:pb-24 mb-24 px-5"
+  class="py-10 relative overflow-hidden bg-gradient-to-b from-cyan-600 to-cyan-400 text-white xl:py-32 px-5"
 >
   <div class="relative">
     <svg
-      class="w-2/3 opacity-[0.08] -top-12 -right-64 absolute"
+      class="w-2/3 hidden z-0 opacity-[0.06] -top-12 -right-64 absolute"
       viewBox="0 0 262 297"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -23,17 +23,17 @@ import Rating from "./atoms/Rating.astro";
         fill="currentColor"></path>
     </svg>
   </div>
-  <div class="max-w-4xl mx-auto mb-24">
-    <h1 class="text-3xl sm:text-7xl mb-4 font-black">
+  <div class="sm:w-2/3 mx-auto mb-12 xl:mb-24 text-center">
+    <h1 class="text-3xl max-w-4xl mx-auto md:text-7xl mb-4 font-black">
       XML HTML Sitemap / NoIndex SEO
     </h1>
-    <p class="mb-10 opacity-70 max-w-xl text-3xl">
+    <p class="mb-10 opacity-70 max-w-xl mx-auto text-2xl">
       HTML Sitemap Builder, XML Sitemap, NoIndex, NoFollow meta tags
     </p>
 
-    <div class="flex gap-8 items-center">
+    <div class="flex gap-8 flex-col items-center justify-center">
       <Button />
-      <div class="flex flex-col gap-1">
+      <div class="flex flex-col gap-2">
         <Rating />
         <div class="text-center font-medium">
           <span class="font-black">2048</span> reviews
@@ -42,7 +42,7 @@ import Rating from "./atoms/Rating.astro";
     </div>
   </div>
   <div
-    class="relative flex w-2/3 shadow-2xl shadow-cyan-900 rounded-xl overflow-clip mx-auto"
+    class="relative flex lg:w-2/3 shadow-2xl shadow-cyan-900 rounded-xl overflow-clip mx-auto"
   >
     <iframe
       class="w-full shrink-0 aspect-video"

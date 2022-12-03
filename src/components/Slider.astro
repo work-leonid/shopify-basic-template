@@ -1,10 +1,21 @@
-<section class="mb-28">
-  <h2 class="font-bold text-center mb-12 text-3xl md:text-6xl sticky top-10">
-    Features
-  </h2>
+---
+import Button from "./Button.astro";
+---
+
+<section
+  class="mb-28 rounded-3xl sm:rounded-[2em] lg:rounded-[5em] relative lg:pb-48 xl:pt-24 sm:mx-8 p-6 sm:p-10 sm:p-16 bg-white"
+>
+  <div
+    class="flex flex-col gap-6 md:flex-row md:justify-between lg:w-3/4 mb-8 sm:mb-20 mx-auto md:items-center"
+  >
+    <h2 class="font-bold text-4xl md:text-5xl lg:text-7xl text-cyan-500">
+      Features
+    </h2>
+    <Button />
+  </div>
 
   <div
-    class="flex flex-col items-center [&>*]:sticky [&>*]:top-36 [&>*]:w-2/3 [&>*]:rounded-xl [&>*]:overflow-clip [&>*]:shadow-xl [&>*]:shadow-cyan-600/10 gap-20"
+    class="flex flex-col items-center [&>*]:xl:w-3/4 [&>*]:rounded-lg [&>*]:xl:rounded-2xl [&>*]:overflow-clip gap-6 sm:gap-10 xl:gap-20"
   >
     <img src="sitemaps/image_01.png" alt="" />
     <img src="sitemaps/image_02.png" alt="" />
